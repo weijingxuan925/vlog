@@ -1,0 +1,74 @@
+/* Reset the styles for common HTML elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a default font for the page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the page header */
+/*header {*/
+/*    background-color: #4da6ff;*/
+/*    color: white;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*!* Center the page title *!*/
+/*header h1 {*/
+/*    text-align: center;*/
+/*}*/
+
+/* Style the container for the blog list */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the individual blog items */
+.blog-item {
+    margin-bottom: 40px;
+}
+
+/* Style the blog images */
+.blog-item img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+/* Style the blog titles */
+.blog-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the blog meta information */
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.blog-author, .blog-date {
+    font-size: 14px;
+}
+
+/* Style the "read more" links */
+.blog-item a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4da6ff;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.blog-item a:hover {
+    background-color: #1a75ff;
+}

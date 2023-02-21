@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wjx.dao.UserMapper">
+    <select id="getUserByUserName" resultType="com.wjx.pojo.User">
+        select * from user where user_name = #{userName}
+    </select>
+    <select id="getUserById" resultType="com.wjx.pojo.User">
+        select * from user where id = #{id}
+    </select>
+    <insert id="addUser" parameterType="com.wjx.pojo.User">
+        insert into user (user_avatar, user_desc, user_display_name, user_email, user_name, user_pass) VALUES (#{userAvatar},#{userDesc},#{userDisplayName},#{userEmail},#{userName},#{userPass})
+    </insert>
+    <delete id="deleteUser">
+        delete from user where id=#{id}
+    </delete>
+    <update id="updateUser" parameterType="com.wjx.pojo.User">
+        update user set user_avatar=#{userAvatar},user_desc=#{userDesc},user_display_name=#{userDisplayName},user_email=#{userEmail},user_name=#{userName},user_pass=#{userPass} where id=#{id}
+    </update>
+    <select id="queryAllUser" resultType="com.wjx.pojo.User">
+        select * from user
+    </select>
+</mapper>
