@@ -31,7 +31,7 @@
 <div class="login-page">
     <div class="login-form">
         <h1>Login</h1>
-        <form>
+        <form action="${pageContext.request.contextPath}/login" method="post">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 

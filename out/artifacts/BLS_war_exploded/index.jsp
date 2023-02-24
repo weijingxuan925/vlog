@@ -1,4 +1,5 @@
-<%--
+<%@ page import="com.wjx.utils.Constants" %>
+<%@ page import="com.wjx.pojo.User" %><%--
   Created by IntelliJ IDEA.
   User: 111
   Date: 2023/2/20
@@ -13,25 +14,12 @@
   <link href="css/heard.css" rel="stylesheet" type="text/css">
   <link href="css/index.css" rel="stylesheet" type="text/css">
   <body>
-  <header id="header"></header>
-  <script>
-    // 使用 XMLHttpRequest 对象获取 header.html 文件内容
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'heard/head.html', true);
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        // 将导航栏 HTML 代码插入到页面中的 header 元素中
-        document.getElementById('header').innerHTML = xhr.responseText;
-      }
-    };
-    xhr.send();
-  </script>
-
+  <%@ include file="heard/head.html" %>
   <div class="container">
     <h1>My Blog</h1>
     <div class="blog-list">
       <div class="blog-item">
-        <img src="blog1.jpg" alt="Blog 1">
+        <img src="" alt="Blog 1">
         <div class="blog-meta">
           <div class="blog-author">John Doe</div>
           <div class="blog-date">2023-02-15</div>
@@ -41,7 +29,7 @@
         <a href="#">Read more</a>
       </div>
       <div class="blog-item">
-        <img src="blog2.jpg" alt="Blog 2">
+        <img src="" alt="Blog 2">
         <div class="blog-meta">
           <div class="blog-author">Jane Smith</div>
           <div class="blog-date">2023-02-10</div>
@@ -51,7 +39,7 @@
         <a href="#">Read more</a>
       </div>
       <div class="blog-item">
-        <img src="blog3.jpg" alt="Blog 3">
+        <img src="" alt="Blog 3">
         <div class="blog-meta">
           <div class="blog-author">Bob Johnson</div>
           <div class="blog-date">2023-02-05</div>
@@ -66,5 +54,25 @@
   <footer>
     <p>Copyright © My Blog</p>
   </footer>
+  <script>
+    <% User user = (User) request.getSession().getAttribute(Constants.USER_SESSION);
+    String username = "null";
+    if (user == null){
+      username = "null";
+    }else {
+      username = user.getUserName();
+    }
+    %>
+    updateLoginButton("<%=username%>")
+  </script>
+  <!--判断是否登入失败-->
+  <script>
+    <% String loginfailed = request.getParameter("loginfailed"); %>
+    <%
+    if (loginfailed != null){
+    %>
+    alert("登入失败")
+    <%}%>
+  </script>
   </body>
 </html>

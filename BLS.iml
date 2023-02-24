@@ -58,5 +58,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.24" level="project" />
+    <orderEntry type="library" name="commons-fileupload-1.2.1" level="project" />
+    <orderEntry type="library" name="commons-io-1.4" level="project" />
+    <orderEntry type="library" name="json_simple-1.1" level="project" />
   </component>
 </module>

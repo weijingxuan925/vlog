@@ -38,6 +38,11 @@ public class UserServiceImpl implements UserService {
         return userMapper.queryAllUser();
     }
 
+    @Override
+    public User queryUserByUsernameAndPassword(String username, String password) {
+        return userMapper.queryUserByUsernameAndPassword(username,password);
+    }
+
     public void setUserMapper(UserMapper userMapper) {
         this.userMapper = userMapper;
     }

@@ -1,41 +1,5 @@
-
-/*!*a {*!*/
-/*!*    color: #fff;*!*/
-/*!*    text-decoration: none;*!*/
-/*!*}*!*/
-
-/*.container {*/
-/*    margin: 50px auto;*/
-/*    max-width: 600px;*/
-/*    padding: 20px;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 5px;*/
-/*}*/
-
-/*h1 {*/
-/*    text-align: center;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-
-/*form {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    box-shadow: none;*/
-/*}*/
-
-/*label {*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
-/*input {*/
-/*    padding: 10px;*/
-/*    margin-bottom: 20px;*/
-/*    border: 1px solid #ccc;*/
-/*    border-radius: 5px;*/
-/*}*/
-
 button {
-    padding: 10px;
+    padding: 18px;
     background-color: #4b9cd3;
     color: #fff;
     border: none;
@@ -68,24 +32,10 @@ label {
 input {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     border: none;
     border-radius: 5px;
     box-shadow: none;
-    font-size: 16px;
+    font-size: 30px;
 }
-
-/*button {*/
-/*    background-color: #4CAF50;*/
-/*    color: white;*/
-/*    padding: 10px 20px;*/
-/*    border: none;*/
-/*    border-radius: 5px;*/
-/*    font-size: 16px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*button:hover {*/
-/*    background-color: #3e8e41;*/
-/*}*/

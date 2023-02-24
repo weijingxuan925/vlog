@@ -21,4 +21,7 @@
     <select id="queryAllUser" resultType="com.wjx.pojo.User">
         select * from user
     </select>
+    <select id="queryUserByUsernameAndPassword" resultType="com.wjx.pojo.User">
+        select * from user where user_name=#{Username} and user_pass=#{Password}
+    </select>
 </mapper>
