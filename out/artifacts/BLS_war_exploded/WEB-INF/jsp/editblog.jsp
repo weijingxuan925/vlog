@@ -21,10 +21,12 @@
     <script charset="utf-8" src="${pageContext.request.contextPath}/kindeditor/lang/zh-CN.js"></script>
     <script charset="utf-8" src="${pageContext.request.contextPath}/kindeditor/plugins/code/prettify.js"></script>
     <script>
+        var editor1;
         KindEditor.ready(function(K) {
-            var editor1 = K.create('textarea[name="content1"]', {
+            editor1 = K.create('textarea[name="content1"]', {
                 cssPath : '${pageContext.request.contextPath}/kindeditor/plugins/code/prettify.css',
-                uploadJson : '${pageContext.request.contextPath}/kindeditor/jsp/upload_json.jsp',
+                uploadJson : '${pageContext.request.contextPath}/user/submitForm',
+                filePostName: 'cover',
                 fileManagerJson : '${pageContext.request.contextPath}/kindeditor/jsp/file_manager_json.jsp',
                 allowFileManager : true,
                 afterCreate : function() {
@@ -49,14 +51,18 @@
 <%@ include file="/heard/head.html" %>
 <div class="container">
     <h1 class="text-center mb-4">编辑新博客</h1>
-    <form action="addBlog.do" method="post">
+    <form action="${pageContext.request.contextPath}/user/submitForm" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="title">博客标题：</label>
             <input type="text" class="form-control" id="title" name="title" required>
         </div>
         <div class="form-group">
+            <label for="cover">博客封面</label>
+            <input type="file" class="form-control-file" id="cover" name="cover" accept="image/*" required>
+        </div>
+        <div class="form-group">
             <label>博客内容：</label>
-            <textarea name="content1" cols="100" rows="8" style="width:1400px;height:500px;visibility:hidden;"></textarea>
+            <textarea id="content1" name="content1" cols="100" rows="8" style="width:1400px;height:500px;visibility:hidden;"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">发布博客</button>
     </form>

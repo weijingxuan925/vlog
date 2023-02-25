@@ -3,13 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <!--开启驼峰下划线转换-->
     <settings>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
+
     <typeAliases>
         <package name="com.wjx.pojo"/>
     </typeAliases>
+
     <mappers>
         <mapper class="com.wjx.dao.UserMapper"/>
+        <mapper class="com.wjx.dao.PostMapper"/>
     </mappers>
 </configuration>

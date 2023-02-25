@@ -1,9 +1,15 @@
+import com.wjx.pojo.Post;
 import com.wjx.pojo.User;
+import com.wjx.service.PostService;
 import com.wjx.service.UserService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.xml.crypto.Data;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class MyTest {
@@ -51,5 +57,21 @@ public class MyTest {
         UserService userServiceImpl = (UserService) context.getBean("UserServiceImpl");
         List<User> userlist = userServiceImpl.queryAllUser();
         System.out.println(userlist);
+    }
+    @Test
+    public void test7() throws ParseException {
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        PostService postServiceImpl = (PostService) context.getBean("PostServiceImpl");
+
+        Date date = new Date();//获得系统时间.
+        SimpleDateFormat sdf =   new SimpleDateFormat( " yyyy-MM-dd HH:mm:ss " );
+        String nowTime = sdf.format(date);
+        Date time = sdf.parse( nowTime );
+
+        Post post = new Post(1,"http://www.baiu.com","正常","111","http:123","标题","2",time,"1");
+
+        int status = postServiceImpl.addPost(post);
+        System.out.println(status);
+
     }
 }

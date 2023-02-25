@@ -46,4 +46,7 @@ public class UserServiceImpl implements UserService {
     public void setUserMapper(UserMapper userMapper) {
         this.userMapper = userMapper;
     }
+
+    public void setUserMapper(String userMapper) {
+    }
 }

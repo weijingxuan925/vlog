@@ -11,6 +11,9 @@
     <bean id="UserServiceImpl" class="com.wjx.service.UserServiceImpl">
         <property name="userMapper" ref="userMapper"/>
     </bean>
+    <bean id="PostServiceImpl" class="com.wjx.service.PostServiceImpl">
+        <property name="psotMapper" ref="postMapper"/>
+    </bean>
 
     <!--声明式事务配置-->
     <bean id="TransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

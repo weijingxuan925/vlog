@@ -15,7 +15,6 @@
 </head>
 <body>
 <%@ include file="/heard/head.html" %>
-
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">

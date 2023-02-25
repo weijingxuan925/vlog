@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wjx.dao.PostMapper">
+    <select id="getPostById" resultType="com.wjx.pojo.Post">
+        select * from post where id=#{id}
+    </select>
+    <select id="getPostByTitle" resultType="com.wjx.pojo.Post">
+        select * from post where post_title=#{title}
+    </select>
+    <select id="getPostAllByUser" resultType="com.wjx.pojo.Post" parameterType="com.wjx.pojo.User">
+        select * from post where article_owner=#{id}
+    </select>
+    <insert id="addPost" parameterType="com.wjx.pojo.Post">
+        insert into post (post_content, post_status, post_summary, post_thumbnail, post_title, post_views, create_time, article_owner) VALUES (#{postContent},#{postStatus},#{postSummary},#{postThumbnail},#{postTitle},#{postViews},#{createTime},#{articleOwner})
+    </insert>
+    <delete id="deletePost">
+        delete from post where id=#{id}
+    </delete>
+    <update id="updatePost" parameterType="com.wjx.pojo.Post">
+        update post set post_content=#{postContent},post_status=#{postStatus},post_summary=#{postSummary},post_thumbnail=#{postThumbnail},post_title=#{postTitle},post_views=#{postViews},create_time=#{createTime},article_owner=#{articleOwner} where id=#{id}
+    </update>
+    <select id="queryAllPost" resultType="com.wjx.pojo.Post">
+        select * from post;
+    </select>
+</mapper>
