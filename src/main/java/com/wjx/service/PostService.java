@@ -20,4 +20,6 @@ public interface PostService {
     int updatePost(Post post);
     //查询所有文章
     List<Post> queryAllPost();
+    //随机查询三条博客
+    List<Post> queryThreePost();
 }

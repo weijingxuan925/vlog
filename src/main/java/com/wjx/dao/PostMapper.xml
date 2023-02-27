@@ -24,4 +24,7 @@
     <select id="queryAllPost" resultType="com.wjx.pojo.Post">
         select * from post;
     </select>
+    <select id="queryThreePost" resultType="com.wjx.pojo.Post">
+        SELECT * FROM post ORDER BY RAND() LIMIT 3;
+    </select>
 </mapper>

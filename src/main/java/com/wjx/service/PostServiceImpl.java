@@ -44,6 +44,11 @@ public class PostServiceImpl implements PostService{
         return psotMapper.queryAllPost();
     }
 
+    @Override
+    public List<Post> queryThreePost() {
+        return psotMapper.queryThreePost();
+    }
+
     public void setPsotMapper(PostMapper psotMapper) {
         this.psotMapper = psotMapper;
     }

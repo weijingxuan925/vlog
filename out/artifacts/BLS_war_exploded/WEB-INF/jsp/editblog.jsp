@@ -1,4 +1,5 @@
-<%--
+<%@ page import="com.wjx.pojo.User" %>
+<%@ page import="com.wjx.utils.Constants" %><%--
   Created by IntelliJ IDEA.
   User: 111
   Date: 2023/2/24
@@ -67,6 +68,17 @@
         <button type="submit" class="btn btn-primary">发布博客</button>
     </form>
 </div>
+<script>
+    <% User user = (User) request.getSession().getAttribute(Constants.USER_SESSION);
+    String username = "null";
+    if (user == null){
+      username = "null";
+    }else {
+      username = user.getUserName();
+    }
+    %>
+    updateLoginButton("<%=username%>")
+</script>
 </body>
 </html>
 

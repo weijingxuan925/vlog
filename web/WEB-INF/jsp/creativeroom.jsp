@@ -7,6 +7,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
 <head>
     <title>创作间</title>
@@ -21,32 +23,19 @@
             <div class="card">
                 <div class="card-body">
                     <h1 class="text-center mb-4">我的博客列表</h1>
-                    <button class="btn btn-primary" id="manage-blog-btn">管理博客</button>
                     <button class="btn btn-success" id="create-blog-btn">创建新博客</button>
                 </div>
-                <div class="blog-list">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">博客标题</h5>
-                            <p class="card-text">博客内容摘要</p>
-                            <a href="#" class="btn btn-primary">查看博客</a>
+                <c:forEach items="${PostList}" var="post">
+                    <div class="blog-list">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">${post.postTitle}</h5>
+                                <p class="card-text">${post.postSummary}</p>
+                                <a href="${pageContext.request.contextPath}/blog?blogid=${post.id}" class="btn btn-primary">查看博客</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">博客标题</h5>
-                            <p class="card-text">博客内容摘要</p>
-                            <a href="#" class="btn btn-primary">查看博客</a>
-                        </div>
-                    </div>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">博客标题</h5>
-                            <p class="card-text">博客内容摘要</p>
-                            <a href="#" class="btn btn-primary">查看博客</a>
-                        </div>
-                    </div>
-                </div>
+                </c:forEach>
             </div>
         </div>
     </div>

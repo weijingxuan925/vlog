@@ -1,12 +1,10 @@
 <%@ page import="com.wjx.utils.Constants" %>
-<%@ page import="com.wjx.pojo.User" %><%--
-  Created by IntelliJ IDEA.
-  User: 111
-  Date: 2023/2/20
-  Time: 10:45
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.wjx.pojo.User" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.wjx.pojo.Post" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
   <head>
     <title>首页</title>
@@ -15,41 +13,22 @@
   <link href="css/index.css" rel="stylesheet" type="text/css">
   <body>
   <%@ include file="heard/head.html" %>
-  <div class="container">
-    <h1>My Blog</h1>
-    <div class="blog-list">
-      <div class="blog-item">
-        <img src="" alt="Blog 1">
-        <div class="blog-meta">
-          <div class="blog-author">John Doe</div>
-          <div class="blog-date">2023-02-15</div>
+  <c:forEach items="${PostList}" var="post">
+    <div class="container">
+      <div class="blog-list">
+        <div class="blog-item">
+          <img src="${pageContext.request.contextPath}/images${post.postThumbnail}" alt="Blog 1">
+          <div class="blog-meta">
+            <div class="blog-author">作者编号：${post.articleOwner}</div>
+            <div class="blog-date">${post.createTime}</div>
+          </div>
+          <h2>${post.postTitle}</h2>
+          <p>${post.postSummary}</p>
+          <a href="${pageContext.request.contextPath}/blog?blogid=${post.id}">Read more</a>
         </div>
-        <h2>Blog 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod odio vel neque dapibus commodo.</p>
-        <a href="#">Read more</a>
-      </div>
-      <div class="blog-item">
-        <img src="" alt="Blog 2">
-        <div class="blog-meta">
-          <div class="blog-author">Jane Smith</div>
-          <div class="blog-date">2023-02-10</div>
-        </div>
-        <h2>Blog 2</h2>
-        <p>Phasellus ut nisi sed felis viverra tincidunt. Fusce vel nibh quis lorem egestas fringilla.</p>
-        <a href="#">Read more</a>
-      </div>
-      <div class="blog-item">
-        <img src="" alt="Blog 3">
-        <div class="blog-meta">
-          <div class="blog-author">Bob Johnson</div>
-          <div class="blog-date">2023-02-05</div>
-        </div>
-        <h2>Blog 3</h2>
-        <p>Donec vel justo vitae elit tincidunt aliquet. Sed faucibus nunc quis erat bibendum, ut feugiat velit lobortis.</p>
-        <a href="#">Read more</a>
       </div>
     </div>
-  </div>
+  </c:forEach>
 
   <footer>
     <p>Copyright © My Blog</p>

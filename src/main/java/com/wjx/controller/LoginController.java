@@ -30,20 +30,16 @@ public class LoginController {
         if (user != null){
             //把用户信息存入到session
             request.getSession().setAttribute(Constants.USER_SESSION,user);
-
-//            request.setAttribute("username",username);
-//            model.addAttribute("username",username);
-//            request.setAttribute("username", username);
             //跳转到主页
             System.out.println("登入成功");
-            return "redirect:/index.jsp";
+            return "redirect:/";
         } else {
             System.out.println("登入失败");
             String loginfailed = "登入失败";
             request.setAttribute("loginfailed",loginfailed);
             model.addAttribute("loginfailed",loginfailed);
 //            request.getRequestDispatcher("loginerror.jsp").forward(request,response);
-            return "redirect:/index.jsp";
+            return "redirect:/";
         }
     }
     @RequestMapping("/loginout")
@@ -52,6 +48,6 @@ public class LoginController {
         //移除用户的session信息
         request.getSession().removeAttribute(Constants.USER_SESSION);
         //返回主页
-        return "redirect:/index.jsp";
+        return "redirect:/";
     }
 }

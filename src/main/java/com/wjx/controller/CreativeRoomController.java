@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @Controller
@@ -34,7 +35,11 @@ public class CreativeRoomController {
     private com.wjx.service.PostService PostService;
 
     @RequestMapping("/CreativeRoom")
-    public String CreativeRoom(){
+    public String CreativeRoom(HttpServletRequest request,Model model){
+        //获取指定用户的所有博客
+        User user = (User) request.getSession().getAttribute(Constants.USER_SESSION);
+        List<Post> PostList = PostService.getPostAllByUser(user);
+        model.addAttribute("PostList",PostList);
         return "creativeroom";
     }
     @RequestMapping("/editblog")

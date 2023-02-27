@@ -1,0 +1,48 @@
+<h1>
+	docker进阶DockerCompose
+</h1>
+<br />
+Compose 是用于定义和运行多容器 Docker 应用程序的工具。使用 Compose，您可以使用 YAML 文件来配置应用程序的服务。然后，使用单个命令，从配置中创建并启动所有服务。若要了解有关“撰写”的所有功能的详细信息，请参阅功能列表。<br />
+<br />
+编写工作在所有环境中：生产、过渡、开发、测试以及 CI 工作流。您可以在常见用例中了解有关每个案例的更多信息。<br />
+<br />
+使用撰写基本上是一个三步过程：<br />
+<br />
+使用 定义应用的环境，以便可以在任何位置复制它。Dockerfile<br />
+<br />
+定义组成应用的服务，以便它们可以在隔离的环境中一起运行。docker-compose.yml<br />
+<br />
+运行后，Docker 撰写命令将启动并运行整个应用。您也可以使用 Compose standalone（二进制）运行。<br />
+docker compose updocker-compose updocker-compose<br />
+<p>
+	<br />
+</p>
+<h2>
+	docker-compose.yml模板
+</h2>
+<br />
+<pre class="prettyprint lang-js">version: "3.9"  # optional since v1.27.0
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+    volumes:
+      - .:/code
+      - logvolume01:/var/log
+    links:
+      - redis
+  redis:
+    image: redis
+volumes:
+  logvolume01: {}</pre>
+<br />
+<br />
+<h2>
+	安装
+</h2>
+<br />
+<pre class="prettyprint lang-js">yum -y install update
+yum -y install docker-compose-plugin</pre>
+<br />
+<br />

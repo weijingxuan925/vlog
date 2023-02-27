@@ -20,7 +20,7 @@
     <div class="card">
         <div class="card-body">
             <p class="card-text">您的博客已成功发布。</p>
-            <a href="${pageContext.request.contextPath}/index.jsp" class="btn btn-primary">返回</a>
+            <a href="${pageContext.request.contextPath}/" class="btn btn-primary">返回</a>
         </div>
     </div>
 </div>

@@ -10,37 +10,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83c483ed-f5b8-4203-99b5-84825673a8e0" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BLS_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/BLS_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8692a18f-b837-47a8-bba0-dd9bdb33d6b3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8692a18f-b837-47a8-bba0-dd9bdb33d6b3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BLS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BLS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/controller/CreativeRoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/controller/CreativeRoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/jsp/creativeroom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/jsp/creativeroom.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/dao/PostMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/dao/PostMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/dao/PostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/dao/PostMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/service/PostService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/service/PostServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/classes/com/wjx/service/PostServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/jsp/BlogPublishingSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/jsp/BlogPublishingSuccess.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/jsp/editblog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/jsp/editblog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/post/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/BLS_war_exploded/post/1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wjx/controller/CreativeRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjx/controller/CreativeRoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjx/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjx/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjx/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjx/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjx/dao/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjx/dao/PostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjx/dao/PostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjx/dao/PostMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjx/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjx/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wjx/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wjx/service/PostServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wjx/controller/CreativeRoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjx/controller/CreativeRoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/wjx/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjx/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjx/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjx/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjx/dao/PostMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjx/dao/PostMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjx/dao/PostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjx/dao/PostMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjx/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjx/service/PostService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wjx/service/PostServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wjx/service/PostServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/BlogPublishingSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/BlogPublishingSuccess.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/creativeroom.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/creativeroom.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/editblog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/editblog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/post/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/post/1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +55,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -107,7 +109,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Facet" />
+    <property name="project.structure.last.edited" value="工件" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20331186" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
@@ -297,8 +299,8 @@
       <item itemvalue="JUnit.MyTest.test4" />
       <item itemvalue="JUnit.MyTest.test5" />
       <item itemvalue="JUnit.MyTest.test6" />
-      <item itemvalue="Tomcat 服务器.Tomcat 9.0.67" />
       <item itemvalue="JUnit.MyTest.test7" />
+      <item itemvalue="Tomcat 服务器.Tomcat 9.0.67" />
     </list>
     <recent_temporary>
       <list>
@@ -329,7 +331,9 @@
       <workItem from="1677154396169" duration="311000" />
       <workItem from="1677203028783" duration="8441000" />
       <workItem from="1677238791007" duration="5375000" />
-      <workItem from="1677287433683" duration="14756000" />
+      <workItem from="1677287433683" duration="15435000" />
+      <workItem from="1677394660102" duration="8605000" />
+      <workItem from="1677458581518" duration="7274000" />
     </task>
     <servers />
   </component>
@@ -341,7 +345,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BLS$Tomcat_9_0_67.ic" NAME="Tomcat 9.0.67 覆盖结果" MODIFIED="1677329094836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BLS$Tomcat_9_0_67.ic" NAME="Tomcat 9.0.67 覆盖结果" MODIFIED="1677464958672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/BLS$MyTest_test1.ic" NAME="MyTest.test1 覆盖结果" MODIFIED="1676855523601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
